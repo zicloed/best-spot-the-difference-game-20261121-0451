@@ -1,0 +1,175 @@
+/* Kestrel Cove — warm dusk palette, clean and readable at a glance. */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #0e1626;
+  color: #faeed2;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+
+.shell {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 14px 18px 24px;
+  position: relative;
+}
+
+.hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #2a3a55;
+  padding-bottom: 10px;
+}
+
+.hud-title h1 {
+  margin: 0;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #ffd68c;
+}
+
+.hud-sub {
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #9fb4cc;
+}
+
+.hud-stats {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  background: #1a2b40;
+  border: 1px solid #2a3a55;
+  border-radius: 8px;
+  padding: 7px 12px;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.stat.timer { font-variant-numeric: tabular-nums; font-weight: bold; }
+.stat.timer.low { color: #ff8a7a; border-color: #c64536; }
+.stat.found { color: #ffd23e; }
+
+.hud-actions { display: flex; gap: 8px; }
+
+button {
+  font-family: inherit;
+  font-size: 15px;
+  background: #1a2b40;
+  color: #faeed2;
+  border: 1px solid #3a4f6e;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) { background: #24365a; border-color: #ffd68c; }
+button:disabled { opacity: 0.45; cursor: default; }
+button.big {
+  font-size: 19px;
+  padding: 12px 28px;
+  background: #c64536;
+  border-color: #e0785a;
+  margin-top: 12px;
+}
+button.big:hover { background: #d95545; }
+
+.message {
+  min-height: 22px;
+  margin: 10px 0 8px;
+  font-size: 16px;
+  font-style: italic;
+  color: #cfe0f0;
+}
+
+.panels {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}
+
+.panel { margin: 0; }
+
+.panel canvas {
+  display: block;
+  width: 560px;
+  max-width: 100%;
+  height: auto;
+  border: 3px solid #2a3a55;
+  border-radius: 10px;
+  cursor: crosshair;
+  background: #101c2e;
+}
+
+.panel figcaption {
+  text-align: center;
+  margin-top: 6px;
+  font-size: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #9fb4cc;
+}
+
+.keys {
+  text-align: center;
+  color: #9fb4cc;
+  font-size: 14px;
+  margin: 12px 0 0;
+}
+
+.keys kbd {
+  background: #1a2b40;
+  border: 1px solid #3a4f6e;
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-family: inherit;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 16, 30, 0.82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.overlay.hidden { display: none; }
+
+.card {
+  max-width: 560px;
+  background: #16233a;
+  border: 2px solid #ffd68c;
+  border-radius: 14px;
+  padding: 28px 32px;
+  text-align: center;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+}
+
+.card h2 {
+  margin: 0 0 8px;
+  font-size: 32px;
+  color: #ffd68c;
+}
+
+.card .tagline {
+  font-style: italic;
+  color: #cfe0f0;
+  margin: 0 0 14px;
+}
+
+.card p { line-height: 1.55; }
+
+@media (max-width: 1180px) {
+  .panels { flex-direction: column; align-items: center; }
+}
