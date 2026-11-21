@@ -1,8 +1,8 @@
 # Kestrel Cove — Spot the Difference
 
-[![make.fun rank](https://make.fun/api/competitions/best-spot-the-difference-game-20261121-0451/badge/zicloed/best-spot-the-difference-game-20261121-0451/rank.svg)](https://make.fun/bounty/best-spot-the-difference-game-20261121-0451)
-[![make.fun entries](https://make.fun/api/competitions/best-spot-the-difference-game-20261121-0451/badge/zicloed/best-spot-the-difference-game-20261121-0451/entries.svg)](https://make.fun/bounty/best-spot-the-difference-game-20261121-0451)
-[![make.fun score](https://make.fun/api/competitions/best-spot-the-difference-game-20261121-0451/badge/zicloed/best-spot-the-difference-game-20261121-0451/score.svg)](https://make.fun/bounty/best-spot-the-difference-game-20261121-0451)
+[![make.fun · best-spot-the-difference-game-20261121-0451](https://make.fun/badge/best-spot-the-difference-game-20261121-0451.svg)](https://make.fun/bounty/best-spot-the-difference-game-20261121-0451?utm_source=github&utm_medium=readme&utm_campaign=best-spot-the-difference-game-20261121-0451)
+[![rank](https://make.fun/badge/best-spot-the-difference-game-20261121-0451/zicloed/best-spot-the-difference-game-20261121-0451/rank.svg)](https://make.fun/bounty/best-spot-the-difference-game-20261121-0451/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-spot-the-difference-game-20261121-0451)
+[![reward](https://make.fun/badge/best-spot-the-difference-game-20261121-0451/zicloed/best-spot-the-difference-game-20261121-0451/reward.svg)](https://make.fun/bounty/best-spot-the-difference-game-20261121-0451?utm_source=github&utm_medium=readme&utm_campaign=best-spot-the-difference-game-20261121-0451)
 
 A complete spot-the-difference game set in Kestrel Cove, an imaginary
 harbour at golden hour. Two near-identical pictures sit side by side;
