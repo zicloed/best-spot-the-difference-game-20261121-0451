@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kestrel Cove — Spot the Difference</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="shell">
+  <header class="hud">
+    <div class="hud-title">
+      <h1>Kestrel Cove</h1>
+      <p class="hud-sub">Spot the Difference</p>
+    </div>
+    <div class="hud-stats">
+      <span id="hud-round" class="stat">Round 1 · Calm Cove</span>
+      <span id="hud-timer" class="stat timer">2:00</span>
+      <span id="hud-score" class="stat">Score 0</span>
+      <span id="hud-found" class="stat found">Found 0 of 5 — 5 to go</span>
+    </div>
+    <div class="hud-actions">
+      <button id="btn-hint" type="button">Hint (3)</button>
+      <button id="btn-sound" type="button">Sound on</button>
+      <button id="btn-replay" type="button">Replay</button>
+    </div>
+  </header>
+
+  <p id="hud-message" class="message">Find the differences — tap either picture.</p>
+
+  <section class="panels" aria-label="The two pictures">
+    <figure class="panel">
+      <canvas id="panel-left" width="560" height="420"></canvas>
+      <figcaption>Picture A</figcaption>
+    </figure>
+    <figure class="panel">
+      <canvas id="panel-right" width="560" height="420"></canvas>
+      <figcaption>Picture B</figcaption>
+    </figure>
+  </section>
+
+  <p class="keys">Click a difference in either picture · <kbd>H</kbd> hint · <kbd>R</kbd> replay · <kbd>M</kbd> sound</p>
+
+  <div id="overlay-title" class="overlay">
+    <div class="card">
+      <h2>Kestrel Cove</h2>
+      <p class="tagline">Two pictures of the same cove. Almost the same.</p>
+      <p>Three rounds, from a calm morning to a twilight hunt. Tap every
+      difference you can find before the clock runs out — a golden ring
+      marks each one. Hints cost points, misses cost points, and the
+      clock pays a bonus when you clear a round.</p>
+      <button id="btn-start" type="button" class="big">Start hunting</button>
+    </div>
+  </div>
+
+  <div id="overlay-clear" class="overlay hidden">
+    <div class="card">
+      <h2 id="clear-title">Round cleared!</h2>
+      <p id="clear-text"></p>
+      <button id="btn-next" type="button" class="big">Next round</button>
+    </div>
+  </div>
+
+  <div id="overlay-over" class="overlay hidden">
+    <div class="card">
+      <h2>Time ran out</h2>
+      <p id="over-text"></p>
+      <button id="btn-retry" type="button" class="big">Try this round again</button>
+    </div>
+  </div>
+
+  <div id="overlay-win" class="overlay hidden">
+    <div class="card">
+      <h2>You found them all!</h2>
+      <p id="win-text"></p>
+      <button id="btn-again" type="button" class="big">Play again</button>
+    </div>
+  </div>
+</main>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
